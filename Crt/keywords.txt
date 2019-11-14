@@ -1,0 +1,7 @@
+crtMoveto	KEYWORD2
+crtLineto	KEYWORD2
+crtCursor	KEYWORD2
+crtClear	KEYWORD2
+crtGrid	KEYWORD2
+crtPoint KEYWORD2
+crtRadar KEYWORD2
