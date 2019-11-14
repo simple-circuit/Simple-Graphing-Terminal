@@ -1,0 +1,457 @@
+object Form1: TForm1
+  Left = 247
+  Height = 484
+  Top = 146
+  Width = 776
+  Caption = 'Simple Term'
+  ClientHeight = 464
+  ClientWidth = 776
+  Color = clWhite
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Fixedsys'
+  Font.Pitch = fpFixed
+  Font.Quality = fqDraft
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnKeyPress = form1keypress
+  OnPaint = Form1paint
+  LCLVersion = '1.6.4.0'
+  object Shape1: TShape
+    Left = 734
+    Height = 17
+    Top = 8
+    Width = 25
+    Brush.Color = clRed
+  end
+  object Label1: TLabel
+    Left = 704
+    Height = 15
+    Top = 432
+    Width = 48
+    Caption = 'Label1'
+    ParentColor = False
+    Visible = False
+  end
+  object Timer1: TTimer
+    Interval = 2
+    OnTimer = Timer1Timer
+    left = 688
+    top = 8
+  end
+  object MainMenu1: TMainMenu
+    left = 656
+    top = 112
+    object Open1: TMenuItem
+      Caption = 'Open'
+      OnClick = Open1Click
+    end
+    object Close1: TMenuItem
+      Caption = 'Close'
+      OnClick = Close1Click
+    end
+    object Baud1: TMenuItem
+      Caption = 'Baud'
+      object N3001: TMenuItem
+        Caption = '600'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N3001Click
+      end
+      object N12001: TMenuItem
+        Caption = '1200'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N12001Click
+      end
+      object N24001: TMenuItem
+        Caption = '2400'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N24001Click
+      end
+      object N48001: TMenuItem
+        Caption = '4800'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N48001Click
+      end
+      object N96001: TMenuItem
+        Caption = '9600'
+        GroupIndex = 1
+        ImageIndex = 3
+        RadioItem = True
+        OnClick = N96001Click
+      end
+      object N192001: TMenuItem
+        Caption = '19200'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N192001Click
+      end
+      object N1152001: TMenuItem
+        Caption = '115200'
+        Checked = True
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N1152001Click
+      end
+      object N234001: TMenuItem
+        Caption = '230400'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N234001Click
+      end
+      object N468001: TMenuItem
+        Caption = '460800'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N468001Click
+      end
+      object N5250001: TMenuItem
+        Caption = '525000'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N5250001Click
+      end
+      object N9216001: TMenuItem
+        Caption = '921600'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N9216001Click
+      end
+      object N18432001: TMenuItem
+        Caption = '1843200'
+        GroupIndex = 1
+        RadioItem = True
+        OnClick = N18432001Click
+      end
+    end
+    object Port1: TMenuItem
+      Caption = 'Port'
+      object Com11: TMenuItem
+        Caption = 'Com1'
+        Checked = True
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com11Click
+      end
+      object Com21: TMenuItem
+        Caption = 'Com2'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com21Click
+      end
+      object Com31: TMenuItem
+        Caption = 'Com3'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com31Click
+      end
+      object Com41: TMenuItem
+        Caption = 'Com4'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com41Click
+      end
+      object Com51: TMenuItem
+        Caption = 'Com5'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com51Click
+      end
+      object Com61: TMenuItem
+        Caption = 'Com6'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com61Click
+      end
+      object Com71: TMenuItem
+        Caption = 'Com7'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com71Click
+      end
+      object Com81: TMenuItem
+        Caption = 'Com8'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com81Click
+      end
+      object Com91: TMenuItem
+        Caption = 'Com9'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com91Click
+      end
+      object Com101: TMenuItem
+        Caption = 'Com10'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com101Click
+      end
+      object Com111: TMenuItem
+        Caption = 'Com11'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com111Click
+      end
+      object Com121: TMenuItem
+        Caption = 'Com12'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com121Click
+      end
+      object Com131: TMenuItem
+        Caption = 'Com13'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com131Click
+      end
+      object Com141: TMenuItem
+        Caption = 'Com14'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com141Click
+      end
+      object Com151: TMenuItem
+        Caption = 'Com15'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com151Click
+      end
+      object Com161: TMenuItem
+        Caption = 'Com16'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com161Click
+      end
+      object Com171: TMenuItem
+        Caption = 'Com17'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com171Click
+      end
+      object Com181: TMenuItem
+        Caption = 'Com18'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com181Click
+      end
+      object Com191: TMenuItem
+        Caption = 'Com19'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com191Click
+      end
+      object Com201: TMenuItem
+        Caption = 'Com20'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com201Click
+      end
+      object Com211: TMenuItem
+        Caption = 'Com21'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com211Click
+      end
+      object Com221: TMenuItem
+        Caption = 'Com22'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com221Click
+      end
+      object Com231: TMenuItem
+        Caption = 'Com23'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com231Click
+      end
+      object Com241: TMenuItem
+        Caption = 'Com24'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com241Click
+      end
+      object Com251: TMenuItem
+        Caption = 'Com25'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com251Click
+      end
+      object Com261: TMenuItem
+        Caption = 'Com26'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com261Click
+      end
+      object Com271: TMenuItem
+        Caption = 'Com27'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com271Click
+      end
+      object Com281: TMenuItem
+        Caption = 'Com28'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com281Click
+      end
+      object Com291: TMenuItem
+        Caption = 'Com29'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com291Click
+      end
+      object Com301: TMenuItem
+        Caption = 'Com30'
+        GroupIndex = 2
+        RadioItem = True
+        OnClick = Com301Click
+      end
+    end
+    object CRLF1: TMenuItem
+      Caption = 'CR/LF'
+      object On1: TMenuItem
+        Caption = 'Off'
+        Checked = True
+        GroupIndex = 4
+        RadioItem = True
+        OnClick = On1Click
+      end
+      object LFonCr1: TMenuItem
+        Caption = 'LF on CR'
+        GroupIndex = 4
+        RadioItem = True
+        OnClick = LFonCr1Click
+      end
+      object CRonLF1: TMenuItem
+        Caption = 'CR on LF'
+        GroupIndex = 4
+        RadioItem = True
+        OnClick = CRonLF1Click
+      end
+    end
+    object Graphic1: TMenuItem
+      Caption = 'Graphics'
+      object On2: TMenuItem
+        Caption = 'On'
+        OnClick = On2Click
+      end
+      object CCD1: TMenuItem
+        Caption = 'CCD'
+        Visible = False
+        OnClick = CCD1Click
+      end
+    end
+    object Cursor1: TMenuItem
+      Caption = 'Cursor'
+      object Off1: TMenuItem
+        Caption = 'Off'
+        OnClick = Off1Click
+      end
+    end
+    object send1: TMenuItem
+      Caption = 'Capture'
+      object File2: TMenuItem
+        Caption = 'File'
+        OnClick = File2Click
+      end
+      object Close2: TMenuItem
+        Caption = 'Close'
+        OnClick = Close2Click
+      end
+    end
+    object Send2: TMenuItem
+      Caption = 'Send'
+      object File1: TMenuItem
+        Caption = 'File'
+        OnClick = File1Click
+      end
+      object Delay1: TMenuItem
+        Caption = 'Delay'
+        OnClick = Delay1Click
+      end
+    end
+    object Mask1: TMenuItem
+      Caption = 'Mask'
+      object N7bits1: TMenuItem
+        Caption = '7-bits'
+        OnClick = N7bits1Click
+      end
+    end
+    object Bits1: TMenuItem
+      Caption = 'Bits'
+      Visible = False
+      object Send3: TMenuItem
+        Caption = 'Send'
+        Visible = False
+        OnClick = Send3Click
+      end
+      object B01: TMenuItem
+        Caption = 'B0'
+        Visible = False
+        OnClick = B01Click
+      end
+      object B11: TMenuItem
+        Caption = 'B1'
+        Visible = False
+        OnClick = B11Click
+      end
+      object B21: TMenuItem
+        Caption = 'B2'
+        Visible = False
+        OnClick = B21Click
+      end
+      object B31: TMenuItem
+        Caption = 'B3'
+        Visible = False
+        OnClick = B31Click
+      end
+      object B41: TMenuItem
+        Caption = 'B4'
+        Visible = False
+        OnClick = B41Click
+      end
+      object B51: TMenuItem
+        Caption = 'B5'
+        Visible = False
+        OnClick = B51Click
+      end
+      object B61: TMenuItem
+        Caption = 'B6'
+        Visible = False
+        OnClick = B61Click
+      end
+      object B71: TMenuItem
+        Caption = 'B7'
+        Visible = False
+        OnClick = B71Click
+      end
+    end
+  end
+  object Timer2: TTimer
+    Interval = 110
+    OnTimer = Timer2Timer
+    left = 688
+    top = 40
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'text|*.txt|block|*.s13|6800|*.s19'
+    left = 688
+    top = 112
+  end
+  object SaveDialog1: TSaveDialog
+    left = 688
+    top = 144
+  end
+  object Timer3: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer3Timer
+    left = 688
+    top = 72
+  end
+end
