@@ -493,7 +493,7 @@ begin
         gmode := 5;
         clvk := tcolor($0000ffff); //blue
  end;
-  if (c = 'R') then begin
+  if (c = 'N') then begin
         gmode := 5;
         clvk := tcolor($00ff00ff); //green
  end;
