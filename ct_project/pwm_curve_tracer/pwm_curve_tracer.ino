@@ -13,7 +13,11 @@ volatile int x, y;
 void setup() {
  pinMode(3, OUTPUT);  //pin-3 is the PWM output 0 to 5V
  analogWrite(3,128);
- TCCR2B =TCCR2B & B11111000 | B00000001;  //set the clock divider to 1
+#if defined(ARDUINO_AVR_UNO)
+   TCCR2B =TCCR2B & B11111000 | B00000001;  //set the clock divider to 1
+#else defined(ARDUINO_AVR_MEGA)
+   TCCR3B =TCCR3B & B11111000 | B00000001;  //set the clock divider to 1
+#endif
  Serial.begin(115200); 
 }
 
