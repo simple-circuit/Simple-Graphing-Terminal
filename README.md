@@ -2,12 +2,14 @@
 
 A simple serial terminal for Windows(R) computers. Useful for Arduino text display and data graphing.
 
-The source code is written using the Lazarus IDE.
+The source code is written and compiled using the Lazarus IDE.
 
-How to use the application simple.exe is found in the file simple_term_use.pdf.
+How to use the simple.exe application is presented in simple_term_use.pdf.
 
-Place the folder Crt into your Arduino/Libraries folder if you want to simplify graphing.
+Place the folder Crt into your Arduino/Libraries folder if you want to simplify graphing using simple.exe.
 
-A simple curve tracer example and circuit are provided in the ct_project folder.
+A low part count curve tracer circuit and sketch are provided in the ct_project folder.
+
+![](./ct_project/circuit.png)
 
 ![](./ct_project/green_LED.png)
