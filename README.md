@@ -12,4 +12,4 @@ A low part count curve tracer circuit and sketch are provided in the ct_project 
 
 ![](./circuit.png)
 
-![](./ct_project/green_LED.png)
+![](./green_LED.png)
