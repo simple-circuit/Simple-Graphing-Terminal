@@ -10,6 +10,6 @@ Place the folder Crt into your Arduino/Libraries folder if you want to simplify 
 
 A low part count curve tracer circuit and sketch are provided in the ct_project folder.
 
-![](./ct_project/circuit.png)
+![](./circuit.png)
 
 ![](./ct_project/green_LED.png)
